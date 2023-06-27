@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="6.css" />
+  </head>
+  <body>
+    <div id="paintArea">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="options">
+      <div class="tools" id="tools-section">
+        <div class="tools-row">
+          <div class="tools-wrapper new">
+            <h5><span id="tool-type"></span> Size:</h5>
+            <input type="range" id="pen-slider" value="4" />
+          </div>
+          <div class="tools-wrapper new ">
+            <h5>Color:</h5>
+            <input type="color" id="color-input" />
+          </div>
+          <div class="tools-wrapper new">
+            <h5>Background Color:</h5>
+            <input type="color" id="color-background" />
+          </div>
+        </div>
+        <div class="tools-row-2">
+          <button id="button-pen">Pen</button>
+          <button id="button-clear">Clear</button>
+          <button id="button-erase">Erase</button>
+          <button class="save-img">Save as Image</button>
+        </div>
+      </div>
+    </div>
+    <!-- Script-->
+    <script src="6.js"></script>
+  </body>
+</html>
